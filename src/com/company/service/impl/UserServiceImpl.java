@@ -4,12 +4,9 @@ import com.company.MyException;
 import com.company.dao.UserDao;
 import com.company.model.User;
 import com.company.service.UserService;
-
 import java.util.List;
-import java.util.Scanner;
 
 public class UserServiceImpl implements UserService {
-    Scanner sc = new Scanner(System.in);
     UserDao userDao = new UserDao(){
 
     };
