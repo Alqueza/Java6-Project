@@ -38,7 +38,7 @@ public class UserServiceImpl implements UserService {
         boolean delete = userDao.yesOrno(id);
         if (!delete) {
             try {
-                throw new MyException("Ne smojete udalit' user: id = " + id + " netu");
+                throw new MyException(id + "Не найден");
             } catch (MyException e) {
                 System.out.println(e.getMessage());
             }
