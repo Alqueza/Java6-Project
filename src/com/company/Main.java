@@ -21,7 +21,7 @@ public class Main {
         userService.userAdd(user3);
 
         while (true) {
-            System.out.println("" +
+            System.out.println(
                     "\n1 - Найти пользователя по id " +
                     "\n2 - Удалить пользователя по id " +
                     "\n3 - Показать всех пользователей");
