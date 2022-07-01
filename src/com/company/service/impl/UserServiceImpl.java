@@ -35,8 +35,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void idDelete(int id) {
-        boolean delet = userDao.yesOrno(id);
-        if (!delet) {
+        boolean delete = userDao.yesOrno(id);
+        if (!delete) {
             try {
                 throw new MyException("Ne smojete udalit' user: id = " + id + " netu");
             } catch (MyException e) {
